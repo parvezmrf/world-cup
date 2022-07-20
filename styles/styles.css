@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* header styles */
+.top-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161616;
+    border-radius: 30px;
+
+    padding: 50px 50px 0 50px;
+    color: #ffffff;
+    margin-bottom: 100px;
+}
+
+.top-details {
+    display: block;
+}
+
+.top-title h1 {
+    font-size: 70px;
+    margin: 0;
+}
+
+.top-title a {
+    text-decoration: none;
+}
+
+.top-paragraph {
+    font-size: 16px;
+}
+
+
+.banner-img img {
+    height: 550px;
+    padding-left: 250px;
+
+}
+
+.watch-button {
+    font-size: 16px;
+    background-color: #DD0000;
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+
+
+/* upcoming box and right side styles */
+
+
+.upcoming-box {
+    background-color: #161616;
+    width: 315px;
+    height: 315px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-box {
+    display: block;
+    /* its works */
+}
+
+.container-box a {
+    text-decoration: none;
+}
+
+.box-menu {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 65px;
+    width: 250px;
+    margin: 10px;
+}
+
+.bgblog {
+    background-color: #dd0000;
+    color: white;
+
+}
+
+.bgblog a {
+
+    text-decoration: none;
+    color: white;
+}
+
+/* Right side video article styles */
+
+
+.upcoming-box-list-article {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.list-article {
+
+    flex-grow: 1;
+}
+
+.video-article-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.video-article {
+    width: 300px;
+    height: 350px;
+    padding-left: 20px;
+
+}
+
+.video-banner img {
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.video-details {
+
+    padding-left: 10px;
+}
+
+.video-details button {
+    font-size: 16px;
+}
+
+.video-title p {
+    font-size: 18px;
+}
+
+
+
+
+.fa-regular {
+    color: #161616B2;
+}
+
+.video-duration-comment {
+    display: flex;
+    font-size: 18px;
+}
+
+.comment {
+    padding-left: 50px;
+}
+
+
+/* footer starts */
+
+footer {
+    background-color: #161616;
+    height: 445px;
+}
+
+.footer-title {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.menu-list li {
+    padding-left: 20px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 100;
+}
