@@ -21,6 +21,8 @@ body {
     margin-bottom: 100px;
 }
 
+
+
 .top-details {
     display: block;
 }
@@ -42,8 +44,14 @@ body {
 .banner-img img {
     height: 550px;
     padding-left: 250px;
+    transition: 1s;
 
 }
+
+.banner-img:hover img {
+    height: 700px;
+}
+
 
 .watch-button {
     font-size: 16px;
@@ -73,7 +81,6 @@ body {
 
 .container-box {
     display: block;
-    /* its works */
 }
 
 .container-box a {
@@ -122,18 +129,34 @@ body {
 .video-article-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 150px;
 }
 
 .video-article {
     width: 300px;
-    height: 350px;
+    height: 230px;
     padding-left: 20px;
 
 }
 
+.imgvs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.video-banner {
+
+
+    border: 1px solid #8080802a;
+    border-radius: 10px;
+    padding: 20px;
+}
+
 .video-banner img {
     width: 100%;
-    border-radius: 10px;
+
     padding-bottom: 10px;
 }
 
@@ -162,8 +185,23 @@ body {
     font-size: 18px;
 }
 
+.vs {
+    padding: 5px;
+}
+
+
 .comment {
     padding-left: 50px;
+}
+
+
+.view-all {
+    display: none;
+
+}
+
+.view-all a {
+    text-decoration: none;
 }
 
 
@@ -171,7 +209,12 @@ body {
 
 footer {
     background-color: #161616;
-    height: 445px;
+    height: 400px;
+
+}
+
+.site-footer {
+    padding-top: 50px;
 }
 
 .footer-title {
@@ -195,4 +238,207 @@ footer {
     text-decoration: none;
     color: #ffffff;
     font-weight: 100;
+}
+
+/* -----------------------------
+       media query for mobile
+       --------------------------- */
+
+@media only screen and (max-width: 688px) {
+
+
+    .top-banner {
+        display: block;
+        margin-bottom: 50px;
+        padding: 10px 10px 0 10px;
+    }
+
+    .top-title h1 {
+        font-size: 35px;
+        margin: 0;
+    }
+
+    .banner-img img {
+        height: 500px;
+        padding-left: 0px;
+
+    }
+
+    .watch-button {
+        font-size: 14px;
+
+        padding: 8px 15px;
+    }
+
+    .upcoming-box {
+        background-color: #ffffff00;
+        width: 100%;
+        height: 230px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+
+    .container-box {
+        display: block;
+    }
+
+
+    .box-menu {
+
+
+        background-color: #2b2b2e1e;
+        width: 350px;
+
+    }
+
+    .bgblog {
+        background-color: #dd0000;
+
+    }
+
+    .upcoming-box-list-article {
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    .video-article-grid {
+        display: block;
+    }
+
+
+    .video-article {
+        width: 100%;
+        height: 350px;
+        padding-left: 0;
+        padding-bottom: 35px;
+    }
+
+
+    .view-all {
+        padding-top: 40px;
+        display: inline-block;
+    }
+
+    .menu-list {
+        display: block;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    footer {
+
+        height: 300px;
+    }
+
+    .footer-title {
+        color: #ffffff;
+        font-size: 25px;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+
+    .top-banner {
+        display: flex;
+        margin-bottom: 50px;
+        padding: 20px 20px 0 20px;
+    }
+
+    .top-title h1 {
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .banner-img img {
+        height: 500px;
+        padding-left: 0px;
+
+    }
+
+    .watch-button {
+        font-size: 18px;
+
+        padding: 8px 15px;
+    }
+
+    .upcoming-box {
+        background-color: #ffffff00;
+        width: 100%;
+        height: 230px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+
+    .container-box {
+        display: flex;
+    }
+
+
+    .box-menu {
+
+
+        background-color: #2b2b2e1e;
+        width: 230px;
+
+    }
+
+    .bgblog {
+        background-color: #dd0000;
+
+    }
+
+    .upcoming-box-list-article {
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    .video-article-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .video-article {
+        width: 100%;
+        height: 350px;
+        padding-left: 0;
+        padding-bottom: 35px;
+    }
+
+
+    .view-all {
+        padding-top: 20;
+        display: block;
+    }
+
+
+    .menu-list {
+        display: block;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    footer {
+
+        height: 300px;
+    }
+
+    .footer-title {
+        color: #ffffff;
+        font-size: 25px;
+        text-align: center;
+        padding-top: 50px;
+    }
+
 }
